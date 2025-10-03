@@ -1,0 +1,321 @@
+.carousel, .carousel-item{
+height: 800px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(236, 94, 36);
+}
+.m{
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+    gap: 20px;
+}
+.navbar-1{
+    position: fixed;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    backdrop-filter: blur(20px);
+    top:0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    padding: 10px 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center ;
+}
+.navbar {
+    left: 0;
+    width: 100%;
+    background-color: #99999962;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+.nav-button {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px; 
+    transition: color 0.3s ease, outline 0.3s ease;
+    border-radius: 12px;
+    outline: transparent solid 2px;
+}
+.nav-button:hover {
+    outline: 2px solid rgb(236, 94, 36);
+}
+
+.nav-button:last-child {
+    position: absolute;
+    right: 0;
+}
+.pidor{
+    width: 50px;
+    height: 50px;
+    z-index: 1001;
+    margin-right: 95%;
+    position: absolute;
+}
+.col{
+    background-color: rgb(253, 242, 232);
+    margin-top: 20px;
+    
+}
+
+hr{
+    width: 500px;
+    margin: 30px auto;
+    border: 2px rgb(236, 94, 36) solid;
+}
+.but{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: rgb(236, 94, 36);
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.btn-back {
+    background-color: rgb(134, 133, 133);
+    margin-left: 10px;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.btn-back:hover{
+    background-color: rgb(236, 94, 36);
+    color: white;
+}
+
+.but:active{
+    transform: translateY(5px);
+}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+  }
+  dialog{
+    border: none;
+    border-radius: 20px;
+    width: 540px;
+    height: auto;
+  }
+.close{
+    background-color: rgb(255, 255, 255);
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    position: fixed;
+    margin-left: 550px;
+    
+}
+.img{
+    width: 500px;
+    height: 500px;
+}
+.bi.bi-cart2{
+font-size: 25px;
+color: black;
+}
+.cart {
+    align-items: center;
+    justify-content: center;
+}
+.cart-indicator {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-indicator::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.cart-indicator-dot {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    width: 15px;
+    height: 15px;
+    background: #ff0000;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 2;
+}
+
+.card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08), 0 1.5px 4px 0 rgba(236,94,36,0.10);
+    overflow: hidden;
+    transition: transform 0.18s, box-shadow 0.18s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    border: none;
+    width: 100%;
+}
+.card:hover {
+    box-shadow: 0 8px 32px 0 rgba(236,94,36,0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 16px 16px;
+}
+.card-body {
+    padding: 18px 16px 16px 16px;
+    width: 100%;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+dialog.dialog-wrapper {
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(236,94,36,0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+    padding: 0;
+    max-width: 900px;
+    width: 90vw;
+    margin: auto;
+    background: #fff;
+    animation: modalShow 0.25s cubic-bezier(.4,2,.6,1) both;
+    position: relative;
+}
+dialog.dialog-wrapper[open] {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2000;
+}
+
+body:has(dialog[open]), html:has(dialog[open]) {
+    overflow: hidden !important;
+}
+
+@keyframes modalShow {
+    0% { opacity: 0; transform: translateY(40px) scale(0.98); }
+    100% { opacity: 1; transform: none; }
+}
+dialog.dialog-wrapper .img {
+    margin-left: 10px;
+    width: 450px;
+    height: 100%;
+    border-radius: 24px 0 0 24px;
+    flex-shrink: 0;
+}
+dialog.dialog-wrapper .card-body {
+    padding: 32px 32px 32px 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    box-shadow: 0 2px 8px 0 rgba(236,94,36,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.2s;
+}
+.close:hover {
+    background: #ffe5d1;
+}
+
+.con {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    padding: 40px;
+}
+@media (max-width: 1200px) {
+    .con { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+    .con { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .con { grid-template-columns: 1fr; padding: 20px 4vw; }
+    .card-img-top, dialog.dialog-wrapper .img { height: 100%; }
+    dialog.dialog-wrapper {
+        flex-direction: column;
+        max-width: 98vw;
+        width: 98vw;
+    }
+    dialog.dialog-wrapper .img {
+        width: 100%;
+        height: 220px;
+        border-radius: 24px 24px 0 0;
+    }
+    dialog.dialog-wrapper .card-body {
+        padding: 20px 16px 16px 16px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+body.modal-open {
+    overflow: hidden !important;
+}
+#cookie-accept{
+position: absolute;
+top:100px;
+left: auto;
+}
